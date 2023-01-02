@@ -1,0 +1,118 @@
+.home-mandarin-register-container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.home-mandarin-register-content {
+  display: flex;
+  width: max-content;
+  height: 100%;
+  margin: 0;
+  white-space: nowrap;
+  list-style: none;
+  align-items: center;
+  border-top: 5px solid #fc4c02;
+  border-bottom: 5px solid #fc4c02;
+}
+
+.home-mandarin-register,
+.home-mandarin-signature {
+  width: 100vw;
+  height: 100%;
+  margin: -2px 0;
+  padding: 15px 20px 15px;
+  position: relative;
+  animation: slideMR 120s infinite ease-out;
+  white-space: normal;
+}
+
+@keyframes slideMR {
+  0% {
+    left: 0;
+  }
+  49% {
+    left: 0;
+  }
+  50% {
+    left: -50%;
+  }
+  99% {
+    left: -50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.home-mandarin-register p {
+  color: #fc4c02;
+  font-size: 12px;
+  text-align: center;
+}
+
+.home-mandarin-register a:hover {
+  color: #ff9161;
+}
+
+.home-mandarin-register span {
+  display: block;
+}
+
+.home-mandarin-register a {
+  color: #fc4c02;
+  text-decoration: underline;
+}
+
+.home-mandarin-signature {
+  display: flex;
+  background-color: #fc4c02;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-mandarin-signature img {
+  width: 70%;
+  max-width: 300px;
+}
+
+@media (min-width: 576px) {
+  .home-mandarin-register p {
+    font-size: 19px;
+  }
+
+  .home-mandarin-register,
+  .home-mandarin-signature {
+    padding: 35px 40px 35px;
+  }
+
+  .home-mandarin-signature img {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-mandarin-register-content {
+    border-top: 10px solid #fc4c02;
+    border-bottom: 10px solid #fc4c02;
+  }
+
+  .home-mandarin-signature img {
+    max-width: 620px;
+  }
+
+  .home-mandarin-register p {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-mandarin-register span {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-mandarin-register p {
+    font-size: 30px;
+  }
+}
