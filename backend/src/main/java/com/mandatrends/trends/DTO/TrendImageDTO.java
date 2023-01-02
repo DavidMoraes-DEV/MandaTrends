@@ -1,10 +1,14 @@
 package com.mandatrends.trends.DTO;
 
+import javax.validation.constraints.NotBlank;
+
 import com.mandatrends.trends.entities.TrendImage;
 
 public class TrendImageDTO {
 
 	private Long id;
+	
+	@NotBlank
 	private String imgUrl;
 
 	private Long trendId;

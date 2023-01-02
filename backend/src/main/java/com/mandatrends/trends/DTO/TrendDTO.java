@@ -30,9 +30,7 @@ public class TrendDTO implements Serializable{
 	@NotBlank(message = "Campo Obrigatório")
 	private String source;
 
-	@NotBlank(message = "Campo Obrigatório")
 	private List<TrendImageDTO> imgsUrl = new ArrayList<>();
-	
 	
 	public TrendDTO() {
 	}

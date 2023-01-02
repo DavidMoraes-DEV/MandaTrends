@@ -30,8 +30,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	private JwtTokenStore tokenStore;
 	
 	private static final String[] PUBLIC = {"/oauth/token", "/h2-console/**"};
-	private static final String VISITOR = "/trends";
-	private static final String ADMIN = "/trends/**";
+	private static final String[] VISITOR = {"/trends", "/trend-images"};
+	private static final String[] ADMIN = {"/trends/**", "/trend-images/**"};
 	
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
